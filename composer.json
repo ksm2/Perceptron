@@ -1,0 +1,24 @@
+{
+  "name": "cherry-pick/perceptron",
+  "type": "library",
+  "description": "CherryPick Perceptron Component",
+  "require": {
+    "symfony/property-access": "^2.7"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Konstantin Möllers",
+      "email": "ksm.moellers@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CherryPick\\Component\\Perceptron\\": "src/",
+      "CherryPick\\Component\\Perceptron\\Tests\\": "test/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.7"
+  }
+}
