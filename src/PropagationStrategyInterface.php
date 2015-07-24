@@ -35,7 +35,7 @@ interface PropagationStrategyInterface
      * @param PerceptronInterface $perceptron The perceptron in which we calculate.
      * @param Node $subject The subjected node which weight gets recalculated.
      * @param float $expectedValue The expected value.
-     * @internal param LayerInterface $behind The layer connected behind the subject.
+     * @return float The delta for the subject.
      */
     public function calculateOutputDelta(PerceptronInterface $perceptron, Node $subject, $expectedValue);
 }

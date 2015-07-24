@@ -17,6 +17,14 @@ interface LayerInterface
     public function getPosition();
 
     /**
+     * Changes the position of the layer.
+     *
+     * @param int $position
+     * @return $this
+     */
+    public function setPosition($position);
+
+    /**
      * Returns all contained nodes.
      *
      * @return Node[]
@@ -36,16 +44,6 @@ interface LayerInterface
      * @return float[]
      */
     public function getDeltas();
-
-    /**
-     * @return bool
-     */
-    public function isOutputLayer();
-
-    /**
-     * @return bool
-     */
-    public function isInputLayer();
 
     /**
      * @return bool

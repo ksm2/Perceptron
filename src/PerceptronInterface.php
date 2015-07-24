@@ -56,6 +56,16 @@ interface PerceptronInterface
     public function setWeight(Node $from, Node $to, $value);
 
     /**
+     * Decreases the weight between two nodes.
+     *
+     * @param Node $from
+     * @param Node $to
+     * @param float $subtrahend
+     * @return $this
+     */
+    public function decreaseWeight(Node $from, Node $to, $subtrahend);
+
+    /**
      * Returns the outgoing weights from a node.
      *
      * @param Node $from
@@ -84,4 +94,18 @@ interface PerceptronInterface
      * @return float
      */
     public function getBias();
+
+    /**
+     * Returns the set learning rate.
+     *
+     * @return float
+     */
+    public function getLearningRate();
+
+    /**
+     * Returns the set propagation strategy.
+     *
+     * @return PropagationStrategyInterface
+     */
+    public function getPropagationStrategy();
 }
